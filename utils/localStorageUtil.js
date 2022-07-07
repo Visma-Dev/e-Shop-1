@@ -1,5 +1,5 @@
 // Класс для работы с Локальным хранилищем
-class LocalStorageUtil {
+class LocalStorageUtil{
     constructor() {
         this.keyName = 'products';
     }
@@ -10,28 +10,30 @@ class LocalStorageUtil {
         if (productsLocalStorage !== null) {
             return JSON.parse(productsLocalStorage);
         }
-        return [];
+        return [];         
     }   
 
     // добавление в корзину
     putProducts(id) {
         let products = this.getProducts();
-        let pushProduct = false;
+        let pushProducts = false;
         const index = products.indexOf(id);
 
         // Проверка на наличие товара в корзине
         if (index === -1) {
             products.push(id);
-            pushProduct(true);
+            pushProducts = true;     
         } else {
             products.splice(index, 1);
         }
         
-        products.push(id);
         localStorage.setItem(this.keyName, JSON.stringify(products));
 
-        return { pushProduct, products }
+        return { pushProducts, products }
     }
 }
 
 const localStorageUtil = new LocalStorageUtil();
+
+
+

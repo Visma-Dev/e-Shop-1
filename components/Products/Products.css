@@ -65,7 +65,13 @@
 }
 
 .products-element__btn_active {
-    margin-top: var(--space-large);
+    background-color: rgb(218, 218, 218);
+
+
+}
+
+.products-element__btn_active:hover {
+    background-color: rgb(174, 174, 174);
 
 
 }

@@ -17,7 +17,7 @@
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
-    border: .5px solid rgb(255, 221, 0);
+    border: .5px solid rgb(255, 157, 0);
 }  
 
 .products-element__name {
@@ -71,7 +71,7 @@
 }
 
 .products-element__btn_active:hover {
-    background-color: rgb(174, 174, 174);
+    background-color: rgb(207, 207, 207);
 
 
 }

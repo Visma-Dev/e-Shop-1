@@ -1,9 +1,11 @@
-.container {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap');
+
+.header-container {
     display: flex;
     height: 120px;
     padding: var(--space-small);
     background-color: rgb(16, 13, 11);
-    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
 }
 
 .logo {
@@ -27,6 +29,7 @@
     align-items: center;
     padding: 0 20px;
 
+    font-weight: bold;
     color: rgb(255, 255, 255) ;
     text-decoration: none;
 
@@ -44,7 +47,7 @@
     height: 100px;
     width: 100px;
     color: rgb(255, 166, 0);
-    font-size: 28px;
+    font-size: 18px;
     margin-left: auto;
     margin-right: 315px;
     cursor:pointer;

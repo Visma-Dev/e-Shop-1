@@ -1,8 +1,12 @@
 class Header {
 
+    handlerOpenCartPage() {
+        cartPage.render();
+    }
+
     render(count) {
         const html = `
-            <div class="container">
+            <div class="header-container">
                 <img class = "logo" src="https://i.ibb.co/BNgGwNJ/favicon.png">
                 <nav class="nav">
                     <a class="nav__link" href="#">Смартфоны</a>
@@ -10,8 +14,8 @@ class Header {
                     <a class="nav__link" href="#">Мебель</a>
                     <a class="nav__link" href="#">Игровые приставки</a>
                 </nav>
-                <div class = "counter"> 
-                    🛒 ${count}
+                <div class = "counter" onClick="headerPage.handlerOpenCartPage();"> 
+                     ${count} 🛒 Корзина
                 </div>
             </div>
         `;
@@ -20,6 +24,7 @@ class Header {
     }
 }
 const headerPage = new Header();
+
 const productsStore = localStorageUtil.getProducts();
 headerPage.render(productsStore.length);
 

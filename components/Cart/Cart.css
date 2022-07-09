@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Montserrat:wght@300;400;500&family=Raleway:wght@300;400;500&display=swap');
+.cart-container{
+    width: 60%;
+    height: 70vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    padding-left: 45px;
+
+
+    font-size: 30px;
+    background-color: rgb(28, 24, 32);
+    box-shadow: var(--box-shadow);
+    color: aliceblue;
+    border-radius: var(--border-radius);
+    border: 5px solid rgb(255, 157, 0);
+
+}
+
+.cart-title {
+    color: rgb(255, 204, 0) ;
+}
+
+.cart__exit {
+    position: absolute;
+    width:45px;
+    height: 45px;
+    top: 30px;
+    right:30px;
+    background-image: url(img/exit.svg);
+    fill: aliceblue;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    cursor: pointer;
+}
+.cart-element__name{
+    font-family: 'Raleway';
+    padding: 15px;
+
+}
+
+.cart-element__price{
+    font-family: 'Montserrat';
+    font-weight: bold;
+
+}
+
+.cart-element__sum_price{
+    color: rgb(255, 157, 0) ;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}

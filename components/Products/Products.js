@@ -35,7 +35,7 @@ class Products {
 
             htmlCatalog += `
                 <li class="products-element">
-                    <img class="products-element__img" scr="${img}" />
+                    <img class="products-element__img" src="${img}" />
                     <span class="products-element__price">${price.toLocaleString()} ₽</span>
                     <span class="products-element__name">${name}</span>
                     <button class="products-element__btn${activeClass}" onclick="productsPage.handleSetLocationStorage(this, '${id}');">
@@ -56,4 +56,3 @@ class Products {
 }
 
 const productsPage = new Products();
-productsPage.render();  
